@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
+
   get 'home/index'
   get 'home/private'
   root to: 'home#index'
+  resources :products
 
   devise_for :users
 

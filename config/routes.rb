@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
+
 
   get 'home/index'
   get 'home/private'

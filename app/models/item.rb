@@ -1,9 +1,5 @@
 class Item < ApplicationRecord
-
-	validates :title, :description, :price, :presence => true
-has_many :carts
-	belongs_to :user
-	belongs_to :order
-	validates :title, :description, :decimal, :presence => true
-
+	has_many :orders
+	has_many :users, :through => :order
+	validates :title, :description, :price, presence: true
 end

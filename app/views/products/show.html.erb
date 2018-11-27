@@ -3,12 +3,12 @@
     <div class="col">
     </div>
     <div class="col-4">
-      <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+      <img class="card-img-top" src="<%= @item.image_url %>" alt="">
     </div>
     <div class="col-4">
-      <h4>Titre du produit</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-      <p>Prix: 40€</p>
+      <h4><%= @item.title %></h4>
+      <p><%= @item.description %></p>
+      <p><%= @item.price %>€</p>
       <button type="button" class="btn btn-success">Acheter</button>
     </div>
     <div class="col">

@@ -10,28 +10,29 @@
           <ul class="navbar-nav ml-auto">
             <% unless user_signed_in? %>
             <li class="nav-item active">
-              <a class="nav-link" href="/">Accueil
-                <span class="sr-only">(current)</span>
-              </a>
+              <%= link_to "Accueil", root_path, class: "nav-link" %>
             </li>
             <li class="nav-item">
-          <a class="nav-link" href="/users/sign_up">Sign up</a>
+          <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/users/sign_in">Login</a>
+          <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <%= link_to "Contact", root_path, class: "nav-link" %>
         </li>
         <% else %>
             <li class="nav-item">
-              <a class="nav-link" href="#">Panier (0)</a>
+              <%= link_to "Panier (0)", products_path, class: "nav-link" %></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <%= link_to "Services", new_user_session_path, class: "nav-link" %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <%= link_to "Contact", root_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Log out", destroy_user_session_path,method: :delete, class: "nav-link" %>
             </li>
             <% end %>
           </ul>

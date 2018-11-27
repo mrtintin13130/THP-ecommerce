@@ -1,5 +1,6 @@
 class User < ApplicationRecord
 	has_many :items
+	has_one :cart
 
 
 	has_many :orders, :through => :items

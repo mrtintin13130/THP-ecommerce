@@ -1,9 +1,8 @@
 class HomeController < ApplicationController
   def index
-    @products = Item.all
+    @products = Item.take(4)
   end
 
   def private
-    @products = Item.all
   end
 end

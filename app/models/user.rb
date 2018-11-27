@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-	has_many :items, through: orders
+	has_many :items, :through => :order
 	has_many :orders
 
   # Include default devise modules. Others available are:

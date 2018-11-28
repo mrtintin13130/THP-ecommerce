@@ -1,0 +1,47 @@
+<style>
+  body {
+    background-color: #eeeeee;
+  }
+
+  table {
+    border-collapse:separate;
+    border-spacing: 0 1em;
+  }
+
+</style>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col-6 shadow p-3 mb-5 mt-5 bg-white rounded" style="background-color: #ffffff;">
+      <h2><center>Ajouter une nouvelle image</center></h2>
+      <table class="m-5">
+        <%= form_for @products, url: {action: "create"} do |f| %>
+        <tr>
+          <td><%= f.label ("Titre:") %></td>
+          <td><%= f.text_field :title %></td>
+        </tr>
+        <tr>
+          <td><%= f.label ("Description:") %></td>
+          <td><%= f.text_area(:description, cols: 35, rows: 10) %></td>
+        </tr>
+        <tr>
+          <td><%= f.label ("Prix:") %></td>
+          <td><%= f.text_field :price %></td>
+        </tr>
+        <tr>
+          <td><%= f.label ("Votre image:") %></td>
+          <td><%= f.file_field :file %></td>
+        </tr>
+        <tr>
+          <td colspan="2"><%= f.submit "Envoyer", class: "btn btn-primary" %></td>
+        </tr>
+        <% end %>
+      </table>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+</div>

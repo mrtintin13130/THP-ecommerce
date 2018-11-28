@@ -12,7 +12,7 @@ class ProductsController < ApplicationController
   end
 
   def create
-
     Item.create(title: params["item"]["title"], description: params["item"]["description"], price: params["item"]["price"], image: params["item"]["file"])
+    redirect_to products_url
   end
 end

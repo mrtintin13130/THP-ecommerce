@@ -1,0 +1,25 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col-6 shadow bg-white m-5 p-5">
+      <h2><center>Mon compte</center></h2>
+      <table class="mt-5 mr-auto ml-auto">
+        <tr>
+          <td style="text-align: right; font-weight: bold;">Votre adresse mail: </td>
+          <td style="text-align: left;"><i><%= current_user.email %></i></td>
+        </tr>
+        <tr>
+          <td style="text-align: right; font-weight: bold;">Date de création du compte: </td>
+          <td style="text-align: left;"><i><%= current_user.created_at %></i></td>
+        </tr>
+        <tr>
+          <td colspan="2"><center><%= link_to 'Modifier', edit_user_registration_path, class: "btn btn-primary" %></center></td>
+        </tr>
+      </table>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+</div>

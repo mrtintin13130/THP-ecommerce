@@ -6,7 +6,6 @@ ruby '2.5.1'
 
 
 
-gem 'stripe'
 
 gem 'carrierwave', '~> 1.0'
 

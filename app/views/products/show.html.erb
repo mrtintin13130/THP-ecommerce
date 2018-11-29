@@ -9,7 +9,7 @@
       <h4><%= @item.title %></h4>
       <p><%= @item.description %></p>
       <p><%= @item.price %>€</p>
-      <button type="button" class="btn btn-success">Acheter</button>
+      <%= link_to 'ajouter <i class="fas fa-cart-plus"></i>'.html_safe, new_charge_path %>
     </div>
     <div class="col">
     </div>

@@ -21,6 +21,11 @@
           <%= link_to "Se connecter", new_user_session_path, class: "nav-link" %>
         </li>
         <% else %>
+          <% if current_user.admin == true %>
+            <li class="nav-item">
+              <%= link_to 'Ajouter', new_product_path, class: "nav-link" %>
+            </li>
+          <% end %>
         <li class="nav-item">
           <%= link_to '<i class="fas fa-shopping-cart"></i>'.html_safe, new_charge_path, class: "nav-link" %>
         </li>

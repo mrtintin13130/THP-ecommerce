@@ -1,4 +1,4 @@
-# PROJET JQUERY
+# Projet boutique en ligne
 
 ## PRODUCTION
 

@@ -26,6 +26,7 @@ email: admin@admin.fr
 mdp: adminadmin
 ```
 rails 5.2.1
+
 ruby 2.5.1
 
 ## LE GROUPE

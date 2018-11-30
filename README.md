@@ -1,24 +1,39 @@
-# README
+# PROJET JQUERY
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## PRODUCTION
 
-Things you may want to cover:
+Lien en production: [cliquez-ici]()
 
-* Ruby version
+## INSTALLATION
 
-* System dependencies
+Une fois le repo cloné ou téléchargé, exécutez ces commandes :
 
-* Configuration
+```
+$ bundle install
+```
+```
+$ rails db:create
+```
+```
+$ rails db:migrate
+```
+Puis lancez le serveur en local avec la commande :
+```
+$ rails server
+```
+```
+email: admin@admin.fr
+mdp: adminadmin
+```
+rails 5.2.1
+ruby 2.5.1
 
-* Database creation
+## LE GROUPE
 
-* Database initialization
+Mickael (Github user: jango974)
 
-* How to run the test suite
+Stéphane (Github user: Timmo404)
 
-* Services (job queues, cache servers, search engines, etc.)
+Elliot (Github user: nomoon456)
 
-* Deployment instructions
-
-* ...
+Martin (Github user: mrtintin13130)

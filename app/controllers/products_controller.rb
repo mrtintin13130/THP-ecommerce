@@ -8,7 +8,12 @@ class ProductsController < ApplicationController
   end
 
   def new
+
+    if user_signed_in? && current_user.admin == true
       @products = Item.new
+    else
+      redirect_to products_url
+    end
   end
 
   def create
